@@ -131,7 +131,7 @@ PhotoEnhancerScreen(
 | **Processing** | Unlimited | Unlimited |
 | **Email Support** | ✅ | ✅ Priority |
 | **Updates** | ✅ | ✅ |
-| | [**Buy Indie →**](mailto:nsenterprise9865@gmail.com?subject=Photo%20Enhancer%20SDK%20-%20Indie%20License%20Request) | [**Buy Business →**](mailto:nsenterprise9865@gmail.com?subject=Photo%20Enhancer%20SDK%20-%20Business%20License%20Request) |
+| | [**Buy Indie →**](mailto:support.nsenterprise@gmail.com?subject=Photo%20Enhancer%20SDK%20-%20Indie%20License%20Request) | [**Buy Business →**](mailto:support.nsenterprise@gmail.com?subject=Photo%20Enhancer%20SDK%20-%20Business%20License%20Request) |
 
 </div>
 
@@ -141,7 +141,7 @@ PhotoEnhancerScreen(
 
 For all international customers, we process payments securely via **Paddle**.
 
-1. Email **[nsenterprise9865@gmail.com](mailto:nsenterprise9865@gmail.com)** with the subject: `Photo Enhancer SDK - [Indie/Business] License Request`.
+1. Email **[support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com)** with the subject: `Photo Enhancer SDK - [Indie/Business] License Request`.
 2. You will receive a secure Paddle checkout link.
 3. Once the payment is complete, your License Key will be delivered immediately!
 
@@ -160,7 +160,7 @@ For developers in Bangladesh, you can pay via **bKash (Send Money)** at the curr
 1.  Scan the QR code below or use number: **01904891242**
 2.  **Send Money** the total amount in BDT.
 3.  In the **Reference**, put your **GitHub Username** or **Email**.
-4.  After payment, email the transaction ID to [nsenterprise9865@gmail.com](mailto:nsenterprise9865@gmail.com).
+4.  After payment, email the transaction ID to [support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com).
 
 <div align="center">
 
@@ -168,7 +168,7 @@ For developers in Bangladesh, you can pay via **bKash (Send Money)** at the curr
 
 </div>
 
-> **How to buy:** Email [nsenterprise9865@gmail.com](mailto:nsenterprise9865@gmail.com) with your chosen plan. You will receive your license key within **24 hours**.
+> **How to buy:** Email [support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com) with your chosen plan. You will receive your license key within **24 hours**.
 
 ---
 
