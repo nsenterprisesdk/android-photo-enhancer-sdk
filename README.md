@@ -8,7 +8,7 @@
 
 <div align="center">
 
-![Photo Enhancer SDK](https://img.shields.io/badge/Photo_Enhancer_SDK-v1.0.3-blueviolet?style=for-the-badge)
+![Photo Enhancer SDK](https://img.shields.io/badge/Photo_Enhancer_SDK-v1.0.4-blueviolet?style=for-the-badge)
 [![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
 [![Platform](https://img.shields.io/badge/Platform-Android_API_26+-green?style=for-the-badge&logo=android)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Commercial-orange?style=for-the-badge)](#-pricing)
@@ -65,7 +65,7 @@ repositories {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.3")
+    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.4")
 }
 ```
 
@@ -87,10 +87,11 @@ lifecycleScope.launch {
 
 ### Step 3: Show the UI
 
-#### **Jetpack Compose**
+#### **Option A: Built-in Compose UI**
+Just drop the Compose screen anywhere in your navigation graph. You can let the SDK handle image picking, or pass an `initialUri` from your own custom picker!
 ```kotlin
-// Just drop in the Compose screen anywhere in your navigation graph
 PhotoEnhancerScreen(
+    initialUri = customUri, // Optional: Pass your own picked image!
     onBack = { 
         navController.popBackStack()
     },
@@ -100,7 +101,54 @@ PhotoEnhancerScreen(
 )
 ```
 
-**Works with Kotlin & Compose. Zero servers. Production-ready.**
+#### **Option B: 100% Custom UI (Headless Mode)**
+Want complete control over the user experience? You can build your *own* Image Picker, your *own* custom Loading Screens, and your *own* Result Screens using standard Android XML or your own Compose layouts. 
+
+Just use the SDK's invisible Headless API as your backend enhancement engine:
+```kotlin
+// 1. You built your own picker. Decode the image safely:
+val originalBitmap = ImageUtils.decodeOrientedBitmap(context, selectedUri)
+
+// 2. Process the image headlessly in a Coroutine (No SDK UI shown!)
+val enhancedBitmap = PhotoEnhancerSDK.processImageHeadless(
+    context = context,
+    bitmap = originalBitmap,
+    mode = FaceEnhancementHelper.EnhanceMode.AUTO_ENHANCE
+) { progress ->
+    // Update your completely custom XML progress bar! (0.0 to 1.0)
+    myCustomProgressBar.progress = (progress * 100).toInt()
+}
+
+// 3. Show the enhancedBitmap in your own custom Result Activity!
+```
+
+#### **Option C: Brand the Built-in Compose UI (Theming)**
+Don't want to build every screen from scratch, but need the SDK to perfectly match your app's brand? You can fully customize our built-in Compose UI! 
+
+By passing a custom `SDKThemeConfig`, you can overwrite:
+* **Colors** (Backgrounds, Cards, Primary/Secondary Accents, Gradients)
+* **Typography** (Custom Fonts and weights)
+* **All Text** (Titles, Buttons, Error messages, or translate the SDK to another language!)
+
+```kotlin
+val myBrandTheme = SDKThemeConfig.Default.copy(
+    primaryAccent = Color(0xFFFF5722), // Your brand color
+    background = Color(0xFF121212),    // Custom dark mode
+    strings = SDKThemeConfig.Default.strings.copy(
+        title = "My App Enhancer",
+        buttonEnhance = "Make it HD ✦",
+        sectionEnhanceMode = "Choose AI Mode"
+    )
+)
+
+// The SDK UI will now look exactly like your app!
+PhotoEnhancerScreen(
+    theme = myBrandTheme,
+    onBack = { navController.popBackStack() }
+)
+```
+
+**Works with Kotlin, Compose, & XML. Zero servers. Production-ready.**
 
 ---
 
