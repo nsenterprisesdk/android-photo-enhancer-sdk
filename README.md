@@ -259,7 +259,7 @@ A: Contact us within 7 days of purchase if the SDK does not work as described.
 
 ## 📋 Changelog
 
-### v1.0.5 — June 2025
+### v1.0.5 — June 2026
 - **Fix:** Internal SDK error messages (e.g. license/network diagnostics) no longer leak to end users as visible toasts or error text. All user-facing errors are now clean, friendly strings.
 - **Fix:** Adaptive icon background updated to dark theme on sample app.
 
