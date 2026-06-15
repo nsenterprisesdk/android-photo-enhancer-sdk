@@ -8,7 +8,7 @@
 
 <div align="center">
 
-![Photo Enhancer SDK](https://img.shields.io/badge/Photo_Enhancer_SDK-v1.0.4-blueviolet?style=for-the-badge)
+![Photo Enhancer SDK](https://img.shields.io/badge/Photo_Enhancer_SDK-v1.0.5-blueviolet?style=for-the-badge)
 [![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
 [![Platform](https://img.shields.io/badge/Platform-Android_API_26+-green?style=for-the-badge&logo=android)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Commercial-orange?style=for-the-badge)](#-pricing)
@@ -65,7 +65,7 @@ repositories {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.4")
+    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.5")
 }
 ```
 
@@ -252,6 +252,19 @@ A: Contact us within 7 days of purchase if the SDK does not work as described.
 
 - **Email**: [nsenterprise9865@gmail.com](mailto:nsenterprise9865@gmail.com)
 - **Response time**: Within 24 hours
+
+---
+
+---
+
+## 📋 Changelog
+
+### v1.0.5 — June 2025
+- **Fix:** Internal SDK error messages (e.g. license/network diagnostics) no longer leak to end users as visible toasts or error text. All user-facing errors are now clean, friendly strings.
+- **Fix:** Adaptive icon background updated to dark theme on sample app.
+
+### v1.0.4 and earlier
+- Initial public releases with GFPGAN + Real-ESRGAN integration, headless API, and full Compose theming support.
 
 ---
 
