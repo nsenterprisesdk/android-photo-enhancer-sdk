@@ -1,273 +1,246 @@
-# Android Photo Enhancer SDK
+<!-- Banner -->
+<div align="center">
+  <img src="./marketing_banner.png" alt="Clarify Photo Enhancer SDK Banner" width="100%" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+</div>
+
+<br/>
 
 <div align="center">
+  
+[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.5-8B5CF6?style=for-the-badge&logo=android)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
+[![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg?style=for-the-badge)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
+[![Platform](https://img.shields.io/badge/Platform-Android_API_26+-10B981?style=for-the-badge&logo=android)](https://developer.android.com)
+[![License](https://img.shields.io/badge/License-Commercial-F97316?style=for-the-badge)](#-pricing)
 
-![Photo Enhancer SDK Banner](./marketing_banner.png)
+<h3>The Ultimate On-Device Photo Enhancement SDK for Android</h3>
+<p><b>No servers. No per-image costs. 100% private. Just one powerful license key.</b></p>
+
+[**🚀 Quick Start**](#-quick-start-implementation) &nbsp; | &nbsp; [**✨ See the Magic**](#-see-the-magic-before--after) &nbsp; | &nbsp; [**💳 Get a License**](#-pricing--licensing)
 
 </div>
 
+---
+
+## 🛑 Stop Paying Cloud APIs Per Image
+
+Using Replicate, Stability AI, or custom cloud backends? You're paying **$0.01 – $0.05 per image**. That destroys your margins.
+
 <div align="center">
 
-![Photo Enhancer SDK](https://img.shields.io/badge/Photo_Enhancer_SDK-v1.0.5-blueviolet?style=for-the-badge)
-[![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
-[![Platform](https://img.shields.io/badge/Platform-Android_API_26+-green?style=for-the-badge&logo=android)](https://developer.android.com)
-[![License](https://img.shields.io/badge/License-Commercial-orange?style=for-the-badge)](#-pricing)
-
-### The only Android SDK that enhances photos entirely on-device using GFPGAN + Real-ESRGAN.
-### No server. No per-image cost. No privacy risk. Just one license key.
-
-[💳 Get License](#-pricing) &nbsp;•&nbsp; [📖 Quick Start](#-quick-start)
+| Monthly Active Users | Avg Enhancements | Competitor Cloud API Cost | **Clarify SDK Cost** |
+|:---:|:---:|:---:|:---:|
+| **1,000 users** | 2/session | ~$50 – $100 / mo | <b style="color:#10B981;">$49 / mo</b> |
+| **10,000 users** | 2/session | ~$500 – $1,000 / mo | <b style="color:#10B981;">$49 / mo</b> |
+| **100,000 users**| 2/session | ~$5,000 – $10,000 / mo | <b style="color:#10B981;">$149 / mo</b> |
 
 </div>
 
----
-
-## 💸 Stop Paying Per-Image API Costs
-
-If you are using Replicate, Stability AI, or any cloud API to enhance photos, you are paying **$0.01–$0.05 per image**. That adds up fast:
-
-| Monthly Active Users | Avg Enhancements | Cloud API Cost | **Photo Enhancer SDK Cost** |
-|---|---|---|---|
-| 1,000 users | 2/session | **$20–$100** | **$49** |
-| 10,000 users | 2/session | **$200–$1,000** | **$49** |
-| 100,000 users | 2/session | **$2,000–$10,000** | **$149** |
-
-> *One license. Unlimited users. Unlimited enhancements. On the user's device.*
+> **Scale infinitely:** One license. Unlimited users. Unlimited enhancements. Processing happens directly on your user's device.
 
 ---
 
-## ✨ What It Does
+## ✨ See the Magic (Before & After)
 
-### 👤 Face Restoration (GFPGAN v1.4)
-Restores heavily degraded, blurry, or compressed faces with studio-level clarity. Works on old scanned photos, low-resolution portrait shots, and heavily compressed images.
+We bring state-of-the-art **GFPGAN v1.4** and **Real-ESRGAN** directly to the edge.
 
-### 🖼 4× Super-Resolution (Real-ESRGAN)
-Upscales any photo up to 4× its original resolution while recovering micro-details, skin textures, and sharpness that were never visible before.
-
-### 🎨 Intelligent Face Blending
-Advanced feathered-mask technology blends each restored face seamlessly back into the upscaled background. Users can't tell AI was involved.
-
-### 🔒 100% On-Device Privacy
-No photo ever leaves the user's device. Every pixel is processed locally using TensorFlow Lite / ONNX. Add this to your privacy policy and you're fully GDPR compliant.
+<table align="center" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td align="center" width="50%">
+      <b>🪄 Face Restoration</b><br/>
+      <p><i>Studio-level clarity for blurry, pixelated, or compressed faces.</i></p>
+    </td>
+    <td align="center" width="50%">
+      <b>⬆️ 4× Super-Resolution</b><br/>
+      <p><i>Upscale any image while recovering micro-details and textures.</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="./face_before_v2.jpg" width="48%" style="border-radius: 8px;"/>
+      <img src="./face_after_v2.jpg" width="48%" style="border-radius: 8px;"/>
+    </td>
+    <td align="center">
+      <img src="./upscale_before_v2.jpg" width="48%" style="border-radius: 8px;"/>
+      <img src="./upscale_after_v2.jpg" width="48%" style="border-radius: 8px;"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🚀 Quick Start
+## 🛠️ Core Features
 
-### Step 1: Add to your project
+<table align="center">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👤 Intelligent Face Blending</h3>
+      <p>Advanced feathered-mask technology blends each restored face seamlessly back into the upscaled background. Zero "pasted-on" look.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔒 100% On-Device Privacy</h3>
+      <p>Photos never leave the device. Processing runs on TensorFlow Lite/ONNX. Add this to your privacy policy and stay fully GDPR/CCPA compliant.</p>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <h3>🎨 Fully Themed UI Included</h3>
+      <p>Drop in our beautiful Jetpack Compose UI and instantly re-brand it with your colors, typography, and strings in seconds.</p>
+    </td>
+    <td valign="top">
+      <h3>👻 Headless Mode (Custom UI)</h3>
+      <p>Want total control? Build your own camera/picker and just use our invisible Headless API to power the underlying AI processing.</p>
+    </td>
+  </tr>
+</table>
 
-#### **Kotlin DSL (`build.gradle.kts`)**
+---
+
+## 🚀 Quick Start (Implementation)
+
+Integrating Clarify SDK takes less than 10 minutes.
+
+### 1. Add Dependency
+Add the JitPack repository to your `settings.gradle.kts` and the SDK to your `app/build.gradle.kts`:
+
 ```kotlin
-// settings.gradle.kts
-repositories {
-    maven { url = uri("https://jitpack.io") }
-}
-
 // app/build.gradle.kts
 dependencies {
     implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.5")
 }
 ```
 
-### Step 2: Initialize with your license key
+### 2. Initialize
+Validate your license and start prefetching AI models securely:
 
-#### **Kotlin**
 ```kotlin
-// In your MainActivity or Application class
 lifecycleScope.launch {
-    // 1. Initialize and validate the license securely
     val isLicensed = PhotoEnhancerSDK.initialize(context, "YOUR_LICENSE_KEY")
-    
-    // 2. Prefetch AI models in the background
     if (isLicensed) {
-        PhotoEnhancerSDK.init(context)
+        PhotoEnhancerSDK.init(context) // Prefetch models
     }
 }
 ```
 
-### Step 3: Show the UI
+### 3. Launch UI (3 Options)
 
-#### **Option A: Built-in Compose UI**
-Just drop the Compose screen anywhere in your navigation graph. You can let the SDK handle image picking, or pass an `initialUri` from your own custom picker!
+<details open>
+<summary><b>Option A: Plug & Play Compose UI</b> (Easiest)</summary>
+
+Just drop our pre-built screen into your navigation graph.
+
 ```kotlin
 PhotoEnhancerScreen(
-    initialUri = customUri, // Optional: Pass your own picked image!
-    onBack = { 
-        navController.popBackStack()
-    },
+    initialUri = userPickedUri, 
+    onBack = { navController.popBackStack() },
     onNavigateToResult = { originalPath, enhancedPath ->
-        // Navigate to your custom result screen using the saved file paths
+        // Proceed to your custom result screen
     }
 )
 ```
+</details>
 
-#### **Option B: 100% Custom UI (Headless Mode)**
-Want complete control over the user experience? You can build your *own* Image Picker, your *own* custom Loading Screens, and your *own* Result Screens using standard Android XML or your own Compose layouts. 
+<details>
+<summary><b>Option B: Brand the UI (Theming)</b></summary>
 
-Just use the SDK's invisible Headless API as your backend enhancement engine:
+Overwrite our UI with your own brand colors and text.
+
 ```kotlin
-// 1. You built your own picker. Decode the image safely:
-val originalBitmap = ImageUtils.decodeOrientedBitmap(context, selectedUri)
+val myBrandTheme = SDKThemeConfig.Default.copy(
+    primaryAccent = Color(0xFFFF5722),
+    background = Color(0xFF121212),
+    strings = SDKThemeConfig.Default.strings.copy(
+        title = "My App Enhancer",
+        buttonEnhance = "Make it HD ✦"
+    )
+)
 
-// 2. Process the image headlessly in a Coroutine (No SDK UI shown!)
+PhotoEnhancerScreen(theme = myBrandTheme, onBack = { /* ... */ })
+```
+</details>
+
+<details>
+<summary><b>Option C: Headless API (100% Custom)</b></summary>
+
+Build your own UI completely. Use our engine in the background.
+
+```kotlin
+// Process the image in an IO coroutine
 val enhancedBitmap = PhotoEnhancerSDK.processImageHeadless(
     context = context,
     bitmap = originalBitmap,
     mode = FaceEnhancementHelper.EnhanceMode.AUTO_ENHANCE
 ) { progress ->
-    // Update your completely custom XML progress bar! (0.0 to 1.0)
-    myCustomProgressBar.progress = (progress * 100).toInt()
+    // progress is a Float from 0.0 to 1.0
+    customProgressBar.progress = (progress * 100).toInt()
 }
-
-// 3. Show the enhancedBitmap in your own custom Result Activity!
 ```
-
-#### **Option C: Brand the Built-in Compose UI (Theming)**
-Don't want to build every screen from scratch, but need the SDK to perfectly match your app's brand? You can fully customize our built-in Compose UI! 
-
-By passing a custom `SDKThemeConfig`, you can overwrite:
-* **Colors** (Backgrounds, Cards, Primary/Secondary Accents, Gradients)
-* **Typography** (Custom Fonts and weights)
-* **All Text** (Titles, Buttons, Error messages, or translate the SDK to another language!)
-
-```kotlin
-val myBrandTheme = SDKThemeConfig.Default.copy(
-    primaryAccent = Color(0xFFFF5722), // Your brand color
-    background = Color(0xFF121212),    // Custom dark mode
-    strings = SDKThemeConfig.Default.strings.copy(
-        title = "My App Enhancer",
-        buttonEnhance = "Make it HD ✦",
-        sectionEnhanceMode = "Choose AI Mode"
-    )
-)
-
-// The SDK UI will now look exactly like your app!
-PhotoEnhancerScreen(
-    theme = myBrandTheme,
-    onBack = { navController.popBackStack() }
-)
-```
-
-**Works with Kotlin, Compose, & XML. Zero servers. Production-ready.**
+</details>
 
 ---
 
-## 🔧 Technical Specs
+## 📱 Hardware & Device Support
 
-| | |
-|---|---|
-| **Min SDK** | Android 8.0 (API 26) |
-| **Architectures** | arm64-v8a, armeabi-v7a |
-| **Runtime** | ONNX Runtime / LiteRT |
-| **Face Detection** | Google ML Kit |
-| **GFPGAN Model** | v1.4 FP16 (downloaded once) |
-| **ESRGAN Model** | Real-ESRGAN (downloaded once) |
-| **Avg Processing Time** | 2–5 seconds on mid-range devices |
-| **Offline Support** | ✅ After first model download |
+The SDK leverages the device's neural processors (NPU/GPU) for heavy lifting. 
 
-### 📱 Device Compatibility
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>✅ Supported Specs</h3>
+      <ul>
+        <li><b>OS:</b> Android 8.0 (API 26+)</li>
+        <li><b>RAM:</b> Minimum <b>3GB</b> (4GB+ recommended)</li>
+        <li><b>Arch:</b> <code>arm64-v8a</code> (Optimal) and <code>armeabi-v7a</code></li>
+        <li><b>Runtime:</b> LiteRT / ONNX</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚠️ Limitations & Exclusions</h3>
+      <ul>
+        <li><b>Android Go / &lt;2GB RAM:</b> Will experience Out-Of-Memory (OOM) crashes on 4x upscaling.</li>
+        <li><b>Legacy Arch:</b> <code>x86</code> and <code>mips</code> are not supported for production deployment.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-Because the SDK runs heavy AI models (GFPGAN and Real-ESRGAN) entirely on-device, it requires minimum hardware specifications to prevent Out-Of-Memory (OOM) crashes.
-
-#### ✅ Supported Devices
-*   **Android Version:** Android 8.0 (API 26) and above.
-*   **RAM:** **Minimum 3GB RAM**, recommended 4GB+ for smooth 4× upscaling.
-*   **Processors:** Modern 64-bit processors (`arm64-v8a`) or standard 32-bit (`armeabi-v7a`).
-
-#### ❌ Unsupported / Problematic Devices
-*   **Ultra Low-End Devices (Android Go / < 2GB RAM):** Devices with 1GB or 2GB of RAM will likely experience out-of-memory crashes during heavy 4x upscaling or face restoration.
-*   **Legacy Architecture:** `x86` (32-bit Intel) and `mips` architectures are not supported. x86_64 is supported for emulator testing, but physical deployment is optimized for ARM devices.
-*   **Android 7.1 and below (API < 26):** Not supported due to modern LiteRT/TensorFlow limitations.
+> *Note: First-time usage requires a network connection to securely download the compressed AI models (~30MB). All subsequent usage is completely offline.*
 
 ---
 
-## 💳 Pricing
+## 💳 Pricing & Licensing
+
+Get a commercial license tailored to your growth.
 
 <div align="center">
 
-| | **Indie** | **Business** |
+| | **🌱 Indie License** | **🚀 Business License** |
 |---|:---:|:---:|
+| **Target** | Solo Developers / Startups | Agencies / Multiple Portfolios |
 | **Price** | **$49 / month** | **$149 / month** |
-| **Apps** | 1 app | Unlimited apps |
-| **Users** | Unlimited | Unlimited |
-| **Processing** | Unlimited | Unlimited |
-| **Email Support** | ✅ | ✅ Priority |
-| **Updates** | ✅ | ✅ |
-| | [**Buy Indie →**](mailto:support.nsenterprise@gmail.com?subject=Photo%20Enhancer%20SDK%20-%20Indie%20License%20Request) | [**Buy Business →**](mailto:support.nsenterprise@gmail.com?subject=Photo%20Enhancer%20SDK%20-%20Business%20License%20Request) |
+| **Apps Supported** | 1 App Package | Unlimited Apps |
+| **Processing Limits** | Unlimited On-Device | Unlimited On-Device |
+| **Support** | Standard Email | Priority & Strategy |
+| **Action** | [**Buy Indie →**](mailto:support.nsenterprise@gmail.com?subject=Indie%20License) | [**Buy Business →**](mailto:support.nsenterprise@gmail.com?subject=Business%20License) |
 
 </div>
 
----
+<br/>
 
-## 🌍 International Payment (Paddle)
+### 🌍 How to Purchase (International)
+We use **Paddle** for secure, global checkout (Card/PayPal).
+1. Email **[support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com)** requesting a license.
+2. You'll receive a secure Paddle checkout link.
+3. Your License Key is delivered immediately upon payment.
 
-For all international customers, we process payments securely via **Paddle**.
-
-1. Email **[support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com)** with the subject: `Photo Enhancer SDK - [Indie/Business] License Request`.
-2. You will receive a secure Paddle checkout link.
-3. Once the payment is complete, your License Key will be delivered immediately!
-
----
-
-## 🇧🇩 Payment Options (Bangladesh)
-
-For developers in Bangladesh, you can pay via **bKash (Send Money)** at the current market exchange rate.
-
-### 💳 Pricing in BDT
-*   **Indie**: $49 × [Current Rate] ৳
-*   **Business**: $149 × [Current Rate] ৳
-*   *(Current Rate ~118-120 BDT/USD)*
-
-### 📲 How to Pay via bKash:
-1.  Scan the QR code below or use number: **01904891242**
-2.  **Send Money** the total amount in BDT.
-3.  In the **Reference**, put your **GitHub Username** or **Email**.
-4.  After payment, email the transaction ID to [support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com).
+### 🇧🇩 Local Purchase (Bangladesh - bKash)
+1. Scan the QR code or Send Money to: **`01904891242`**
+2. Send the BDT equivalent (e.g. $49 × Current Market Rate ৳).
+3. Put your **Email** in the bKash Reference.
+4. Email us your Transaction ID for instant activation.
 
 <div align="center">
-
-<img src="./bkash_qr.jpeg" width="250" alt="bKash QR">
-
+  <img src="./bkash_qr.jpeg" width="180" alt="bKash QR Code" style="border-radius: 12px; border: 2px solid #8B5CF6;"/>
 </div>
-
-> **How to buy:** Email [support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com) with your chosen plan. You will receive your license key within **24 hours**.
-
----
-
-## 🛡️ Privacy & Compliance
-
-- ✅ **No data collection** — zero telemetry or analytics in the SDK
-- ✅ **No server calls** — all AI inference runs locally on the device
-- ✅ **GDPR / CCPA ready** — photos never leave the user's device
-- ✅ **No internet required** after initial model download
-
----
-
-## ❓ FAQ
-
-**Q: Do I need a Firebase account?**
-A: No! We handle all license validation internally. You do not need a `google-services.json` file. 
-
-**Q: What happens if my user has no internet?**
-A: The SDK caches a valid license. Users can enhance photos fully offline after the first validation and model download.
-
-**Q: How large is the SDK itself?**
-A: The SDK code is extremely lightweight. The AI models are downloaded once on first use and stored in the app's private storage to keep your initial APK size small.
-
-**Q: Can I use this in a free app?**
-A: Yes. Your users don't need to pay anything. Only you (the developer) need the license.
-
-**Q: What if I need a refund?**
-A: Contact us within 7 days of purchase if the SDK does not work as described.
-
----
-
-## 📬 Contact & Support
-
-- **Email**: [nsenterprise9865@gmail.com](mailto:nsenterprise9865@gmail.com)
-- **Response time**: Within 24 hours
-
----
 
 ---
 
@@ -282,10 +255,34 @@ A: Contact us within 7 days of purchase if the SDK does not work as described.
 
 ---
 
+## ❓ FAQ
+
+<details>
+<summary><b>Do I need a Firebase or AWS account?</b></summary>
+<br/>
+No! The SDK handles its own internal security and model delivery. You don't need any <code>google-services.json</code> or cloud infrastructure.
+</details>
+
+<details>
+<summary><b>How big is the SDK?</b></summary>
+<br/>
+The core SDK code is extremely lightweight (< 2MB). The AI models (~30MB) are downloaded dynamically on the user's first interaction and stored in the app's private local storage, keeping your initial Play Store download size small.
+</details>
+
+<details>
+<summary><b>Can I use this in a free app with ads?</b></summary>
+<br/>
+Yes. You can monetize your app however you want. The end-user never pays us—only you maintain the active developer license.
+</details>
+
+---
+
 <div align="center">
 
 **Built with ❤️ by [NS Enterprise](https://github.com/nsenterprise9865-stack)**
 
 *Bangladesh 🇧🇩 • Powering beautiful Android apps with on-device AI*
+
+[Contact Us](mailto:nsenterprise9865@gmail.com) • [Report an Issue](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk/issues)
 
 </div>
