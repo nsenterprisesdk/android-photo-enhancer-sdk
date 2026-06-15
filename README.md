@@ -165,6 +165,20 @@ PhotoEnhancerScreen(
 | **Avg Processing Time** | 2–5 seconds on mid-range devices |
 | **Offline Support** | ✅ After first model download |
 
+### 📱 Device Compatibility
+
+Because the SDK runs heavy AI models (GFPGAN and Real-ESRGAN) entirely on-device, it requires minimum hardware specifications to prevent Out-Of-Memory (OOM) crashes.
+
+#### ✅ Supported Devices
+*   **Android Version:** Android 8.0 (API 26) and above.
+*   **RAM:** **Minimum 3GB RAM**, recommended 4GB+ for smooth 4× upscaling.
+*   **Processors:** Modern 64-bit processors (`arm64-v8a`) or standard 32-bit (`armeabi-v7a`).
+
+#### ❌ Unsupported / Problematic Devices
+*   **Ultra Low-End Devices (Android Go / < 2GB RAM):** Devices with 1GB or 2GB of RAM will likely experience out-of-memory crashes during heavy 4x upscaling or face restoration.
+*   **Legacy Architecture:** `x86` (32-bit Intel) and `mips` architectures are not supported. x86_64 is supported for emulator testing, but physical deployment is optimized for ARM devices.
+*   **Android 7.1 and below (API < 26):** Not supported due to modern LiteRT/TensorFlow limitations.
+
 ---
 
 ## 💳 Pricing
