@@ -41,7 +41,7 @@ Using Replicate, Stability AI, or custom cloud backends? You're paying **$0.01 â
 
 ## âœ¨ See the Magic (Before & After)
 
-We bring state-of-the-art **NSRestore** and **Real-FSRCNN** directly to the edge.
+We bring state-of-the-art **NSRestore** and **Real-FSRCNN** directly to the edge, delivering results in under 5 seconds.
 
 <table align="center" style="width: 100%; border-collapse: collapse;">
   <tr>
@@ -123,8 +123,7 @@ lifecycleScope.launch {
 
 ### 3. Launch UI (3 Options)
 
-<details open>
-<summary><b>Option A: Plug & Play Compose UI</b> (Easiest)</summary>
+#### Option A: Plug & Play Compose UI (Easiest)
 
 Just drop our pre-built screen into your navigation graph.
 
@@ -137,10 +136,8 @@ PhotoEnhancerScreen(
     }
 )
 ```
-</details>
 
-<details>
-<summary><b>Option B: Brand the UI (Theming)</b></summary>
+#### Option B: Brand the UI (Theming)
 
 Overwrite our UI with your own brand colors and text.
 
@@ -156,10 +153,8 @@ val myBrandTheme = SDKThemeConfig.Default.copy(
 
 PhotoEnhancerScreen(theme = myBrandTheme, onBack = { /* ... */ })
 ```
-</details>
 
-<details>
-<summary><b>Option C: Headless API (100% Custom UI)</b></summary>
+#### Option C: Headless API (100% Custom UI)
 
 Build your own UI completely and use our AI engine in the background. You can let your users select the enhancement mode (Auto, Upscale Only, or Face Restore Only).
 
@@ -183,7 +178,6 @@ if (enhancedBitmap != null) {
     resultImageView.setImageBitmap(enhancedBitmap)
 }
 ```
-</details>
 
 ---
 
@@ -212,7 +206,7 @@ The SDK leverages the device's neural processors (NPU/GPU) for heavy lifting.
   </tr>
 </table>
 
-> *Note: First-time usage requires a network connection to securely download the compressed AI models (~30MB). All subsequent usage is completely offline.*
+> *Note: First-time usage requires a network connection to securely download the compressed AI models (~9MB). All subsequent usage is completely offline.*
 
 ---
 
