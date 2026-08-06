@@ -159,19 +159,28 @@ PhotoEnhancerScreen(theme = myBrandTheme, onBack = { /* ... */ })
 </details>
 
 <details>
-<summary><b>Option C: Headless API (100% Custom)</b></summary>
+<summary><b>Option C: Headless API (100% Custom UI)</b></summary>
 
-Build your own UI completely. Use our engine in the background.
+Build your own UI completely and use our AI engine in the background. You can let your users select the enhancement mode (Auto, Upscale Only, or Face Restore Only).
 
 ```kotlin
-// Process the image in an IO coroutine
+// Example: Process the image in an IO coroutine based on user selection
 val enhancedBitmap = PhotoEnhancerSDK.processImageHeadless(
     context = context,
     bitmap = originalBitmap,
-    mode = FaceEnhancementHelper.EnhanceMode.AUTO_ENHANCE
+    mode = FaceEnhancementHelper.EnhanceMode.AUTO_ENHANCE // or UPSCALE, or RESTORE_FACE
 ) { progress ->
     // progress is a Float from 0.0 to 1.0
-    customProgressBar.progress = (progress * 100).toInt()
+    // Update your custom UI progress bar
+    runOnUiThread {
+        customProgressBar.progress = (progress * 100).toInt()
+        progressText.text = "Enhancing: ${(progress * 100).toInt()}%"
+    }
+}
+
+if (enhancedBitmap != null) {
+    // Show the result in your custom ImageView
+    resultImageView.setImageBitmap(enhancedBitmap)
 }
 ```
 </details>
@@ -250,7 +259,7 @@ We use **Paddle** for secure, global checkout (Card/PayPal).
 - **New Models:** Replaced GFPGAN with our custom `NSRestore` (8.2MB) for superior face recovery.
 - **New Upscaler:** Integrated `Real-FSRCNN` (47KB) for blazing fast 4x background upscaling.
 - **Granular Controls:** Added `AUTO_ENHANCE`, `UPSCALE`, and `RESTORE_FACE` modes to give users fine-grained control over the enhancement pipeline.
-- **Performance:** Reduced total model download size from ~30MB to under 9MB while drastically improving inference speed.
+- **Performance:** Drastic size reduction! Our previous GFPGAN (167 MB) and Real-ESRGAN (69 MB) models took up ~236 MB. Our new custom architecture is under **9 MB total** while delivering superior quality and much faster inference speed.
 - **Quality Fixes:** Eliminated color distortion and "white blowout" artifacts in the upscaling pipeline by utilizing correct YCbCr space mapping and dynamic output buffer allocation.
 
 ### v1.0.5 — June 2026
