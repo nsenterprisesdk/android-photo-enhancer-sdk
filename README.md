@@ -41,7 +41,7 @@ Using Replicate, Stability AI, or custom cloud backends? You're paying **$0.01 â
 
 ## âœ¨ See the Magic (Before & After)
 
-We bring state-of-the-art **GFPGAN v1.4** and **Real-ESRGAN** directly to the edge.
+We bring state-of-the-art **NSRestore** and **Real-FSRCNN** directly to the edge.
 
 <table align="center" style="width: 100%; border-collapse: collapse;">
   <tr>
