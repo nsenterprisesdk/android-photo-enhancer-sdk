@@ -7,7 +7,7 @@
 
 <div align="center">
   
-[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.5-8B5CF6?style=for-the-badge&logo=android)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
+[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.6-8B5CF6?style=for-the-badge&logo=android)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
 [![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg?style=for-the-badge)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
 [![Platform](https://img.shields.io/badge/Platform-Android_API_26+-10B981?style=for-the-badge&logo=android)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Commercial-F97316?style=for-the-badge)](#-pricing)
@@ -46,12 +46,12 @@ We bring state-of-the-art **GFPGAN v1.4** and **Real-ESRGAN** directly to the ed
 <table align="center" style="width: 100%; border-collapse: collapse;">
   <tr>
     <td align="center" width="50%">
-      <b>🪄 Face Restoration</b><br/>
-      <p><i>Studio-level clarity for blurry, pixelated, or compressed faces.</i></p>
+      <b>🪄 Face Restoration (NSRestore)</b><br/>
+      <p><i>Studio-level clarity using our ultra-lightweight (8.2MB) custom NSRestore model.</i></p>
     </td>
     <td align="center" width="50%">
-      <b>⬆️ 4× Super-Resolution</b><br/>
-      <p><i>Upscale any image while recovering micro-details and textures.</i></p>
+      <b>⬆️ 4× Super-Resolution (FSRCNN)</b><br/>
+      <p><i>Lightning fast (47KB model) upscaling for rich background details and textures.</i></p>
     </td>
   </tr>
   <tr>
@@ -105,7 +105,7 @@ Add the JitPack repository to your `settings.gradle.kts` and the SDK to your `ap
 ```kotlin
 // app/build.gradle.kts
 dependencies {
-    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.5")
+    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.6")
 }
 ```
 
@@ -246,6 +246,13 @@ We use **Paddle** for secure, global checkout (Card/PayPal).
 
 ## 📋 Changelog
 
+### v1.0.6 — August 2026
+- **New Models:** Replaced GFPGAN with our custom `NSRestore` (8.2MB) for superior face recovery.
+- **New Upscaler:** Integrated `Real-FSRCNN` (47KB) for blazing fast 4x background upscaling.
+- **Granular Controls:** Added `AUTO_ENHANCE`, `UPSCALE`, and `RESTORE_FACE` modes to give users fine-grained control over the enhancement pipeline.
+- **Performance:** Reduced total model download size from ~30MB to under 9MB while drastically improving inference speed.
+- **Quality Fixes:** Eliminated color distortion and "white blowout" artifacts in the upscaling pipeline by utilizing correct YCbCr space mapping and dynamic output buffer allocation.
+
 ### v1.0.5 — June 2026
 - **Fix:** Internal SDK error messages (e.g. license/network diagnostics) no longer leak to end users as visible toasts or error text. All user-facing errors are now clean, friendly strings.
 - **Fix:** Adaptive icon background updated to dark theme on sample app.
@@ -266,7 +273,7 @@ No! The SDK handles its own internal security and model delivery. You don't need
 <details>
 <summary><b>How big is the SDK?</b></summary>
 <br/>
-The core SDK code is extremely lightweight (< 2MB). The AI models (~30MB) are downloaded dynamically on the user's first interaction and stored in the app's private local storage, keeping your initial Play Store download size small.
+The core SDK code is extremely lightweight (< 2MB). The AI models (~8.3MB total) are downloaded dynamically on the user's first interaction and stored in the app's private local storage, keeping your initial Play Store download size small.
 </details>
 
 <details>
