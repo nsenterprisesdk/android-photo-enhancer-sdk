@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.6-8B5CF6?style=for-the-badge&logo=android&logoColor=white)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
+[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.7-8B5CF6?style=for-the-badge&logo=android&logoColor=white)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
 [![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg?style=for-the-badge)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
 [![Platform](https://img.shields.io/badge/Platform-Android_API_26+-10B981?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Commercial-F97316?style=for-the-badge)](#-pricing--licensing)
@@ -131,7 +131,7 @@ dependencyResolutionManagement {
 ```kotlin
 // app/build.gradle.kts
 dependencies {
-    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.6")
+    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.7")
 }
 ```
 
@@ -285,7 +285,7 @@ Flat-rate commercial licenses designed to grow with your business.
 
 ## 📋 Changelog
 
-### v1.0.6 — August 2026
+### v1.0.7 — August 2026
 - **New Model:** Replaced GFPGAN with our custom `NSRestore` (8.2 MB) for superior, artifact-free face recovery.
 - **New Upscaler:** Integrated `Real-FSRCNN` (47 KB) for blazing-fast 4× background upscaling.
 - **Granular Control:** Added `AUTO_ENHANCE`, `UPSCALE`, and `RESTORE_FACE` modes to give users fine-grained control.
@@ -350,3 +350,4 @@ Yes. The SDK ships with its own consumer ProGuard rules, which are applied autom
 <sub>Made by <b>Nahidul Islam Nahid</b></sub>
 
 </div>
+
