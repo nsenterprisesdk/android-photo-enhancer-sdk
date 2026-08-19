@@ -1,4 +1,4 @@
-﻿<!-- Banner -->
+<!-- Banner -->
 <div align="center">
   <img src="./marketing_banner.png" alt="Clarify Photo Enhancer SDK Banner" width="100%" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.18);"/>
 </div>
@@ -33,11 +33,12 @@ Most photo enhancement pipelines rely on third-party cloud APIs that charge **pe
 
 <div align="center">
 
-| Monthly Active Users | Avg. Enhancements | Competitor Cloud Cost | **Clarify SDK Cost** |
+| Monthly Active Users | Max Enhancements | Competitor Cloud Cost | **NS SDK Cost** |
 |:---:|:---:|:---:|:---:|
-| 1,000 users | 2 / session | ~$50 – $100 / mo | **$49 / mo** |
-| 10,000 users | 2 / session | ~$500 – $1,000 / mo | **$49 / mo** |
-| 100,000 users | 2 / session | ~$5,000 – $10,000 / mo | **$149 / mo** |
+| 1 - 10,000 Users (Indie) | Unlimited | ~$500 - $1,000 / mo | **$89 / mo** |
+| 10k - 99,999 Users (Pro) | Unlimited | ~$5,000 - $10,000 / mo | **$199 / mo** |
+| 100k - 10M Users (Scale) | Unlimited | ~$50,000+ / mo | **$499 / mo** |
+| 10M+ Users (Enterprise) | Unlimited | Astronomical | **$999 / mo** |
 
 </div>
 
@@ -249,14 +250,13 @@ Flat-rate commercial licenses designed to grow with your business.
 
 <div align="center">
 
-| | 🌱 **Indie License** | 🚀 **Business License** |
-|---|:---:|:---:|
-| **Best For** | Solo developers & early-stage startups | Agencies & multi-app portfolios |
-| **Price** | **$49 / month** | **$149 / month** |
-| **Apps Covered** | 1 app package | Unlimited apps |
-| **Processing** | Unlimited on-device | Unlimited on-device |
-| **Support** | Standard email | Priority + strategy calls |
-| | [**Get Indie License →**](mailto:support.nsenterprise@gmail.com?subject=Indie%20License%20Request) | [**Get Business License →**](mailto:support.nsenterprise@gmail.com?subject=Business%20License%20Request) |
+| | 🌱 **Indie License** | 🚀 **Pro License** | 📈 **Scale License** | 🏢 **Enterprise** |
+|---|:---:|:---:|:---:|:---:|
+| **Users** | 1 - 10,000 | 10k - 99,999 | 100k - 10M | 10M+ |
+| **Price** | **$89 / month** | **$199 / month** | **$499 / month** | **$999 / month** |
+| **Enhancements** | Unlimited | Unlimited | Unlimited | Unlimited |
+| **Support** | Standard email | Priority support | Priority support | Dedicated team |
+| | [**Get Indie →**](mailto:support.nsenterprise@gmail.com?subject=Indie%20License%20Request) | [**Get Pro →**](mailto:support.nsenterprise@gmail.com?subject=Pro%20License%20Request) | [**Get Scale →**](mailto:support.nsenterprise@gmail.com?subject=Scale%20License%20Request) | [**Contact Sales →**](mailto:support.nsenterprise@gmail.com?subject=Enterprise%20License%20Request) |
 
 </div>
 
