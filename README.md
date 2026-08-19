@@ -256,17 +256,22 @@ Flat-rate commercial licenses designed to grow with your business.
 | **Price** | **$89 / month** | **$199 / month** | **$499 / month** | **$999 / month** |
 | **Enhancements** | Unlimited | Unlimited | Unlimited | Unlimited |
 | **Support** | Standard email | Priority support | Priority support | Dedicated team |
-| | [**Get Indie →**](mailto:support.nsenterprise@gmail.com?subject=Indie%20License%20Request) | [**Get Pro →**](mailto:support.nsenterprise@gmail.com?subject=Pro%20License%20Request) | [**Get Scale →**](mailto:support.nsenterprise@gmail.com?subject=Scale%20License%20Request) | [**Contact Sales →**](mailto:support.nsenterprise@gmail.com?subject=Enterprise%20License%20Request) |
+| | [**Get Indie →**](mailto:hello@nsenterprise.dev?subject=Indie%20License%20Request) | [**Get Pro →**](mailto:hello@nsenterprise.dev?subject=Pro%20License%20Request) | [**Get Scale →**](mailto:hello@nsenterprise.dev?subject=Scale%20License%20Request) | [**Contact Sales →**](mailto:hello@nsenterprise.dev?subject=Enterprise%20License%20Request) |
 
 </div>
 
 <br/>
 
-### 🌍 International Purchase (Paddle — Card / PayPal)
+### 🌍 Global Enterprise Licensing (Payment & Fulfillment)
 
-1. Email **[support.nsenterprise@gmail.com](mailto:support.nsenterprise@gmail.com)** with your license tier.
-2. Receive a secure Paddle checkout link.
-3. Your License Key is delivered immediately upon payment confirmation.
+To initiate a commercial software license agreement, please contact our Enterprise Licensing Desk at **[hello@nsenterprise.dev](mailto:hello@nsenterprise.dev)** specifying your desired tier and organization details. 
+
+We process all global B2B transactions via the following secure networks:
+- **🏦 USD ACH Transfer / Swift:** We will issue a formal corporate invoice for direct routing to our JP Morgan Chase NA corporate account.
+- **🪙 Enterprise Crypto Settlement:** For instant, borderless fulfillment, we accept USDT/USDC via major blockchain networks. 
+- **💳 Credit Card / PayPal:** Available upon request via a secure localized checkout gateway.
+
+*Upon payment verification, our licensing team will instantly provision your production API Keys and dispatch your official tax-compliant receipt.*
 
 ---
 
@@ -341,7 +346,7 @@ Yes. The SDK ships with its own consumer ProGuard rules, which are applied autom
 
 *Bangladesh 🇧🇩 · Powering beautiful Android apps with on-device AI*
 
-[📧 Contact Us](mailto:support.nsenterprise@gmail.com) &nbsp;•&nbsp; [🐛 Report an Issue](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk/issues) &nbsp;•&nbsp; [⭐ Star on GitHub](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
+[📧 Contact Us](mailto:hello@nsenterprise.dev) &nbsp;•&nbsp; [🐛 Report an Issue](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk/issues) &nbsp;•&nbsp; [⭐ Star on GitHub](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
 
 <br/>
 
