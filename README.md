@@ -268,8 +268,7 @@ To initiate a commercial software license agreement, please contact our Enterpri
 
 We process all global B2B transactions via the following secure networks:
 - **🏦 USD ACH Transfer / Swift:** We will issue a formal corporate invoice for direct routing to our JP Morgan Chase NA corporate account.
-- **🪙 Enterprise Crypto Settlement:** For instant, borderless fulfillment, we accept USDT/USDC via major blockchain networks. 
-- **💳 Credit Card / PayPal:** Available upon request via a secure localized checkout gateway.
+- **🪙 Enterprise Crypto Settlement:** For instant, borderless fulfillment, we accept USDT/USDC via major blockchain networks.
 
 *Upon payment verification, our licensing team will instantly provision your production API Keys and dispatch your official tax-compliant receipt.*
 
