@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.7-8B5CF6?style=for-the-badge&logo=android&logoColor=white)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
+[![Photo Enhancer SDK](https://img.shields.io/badge/Clarify_Enhancer_SDK-v1.0.9-8B5CF6?style=for-the-badge&logo=android&logoColor=white)](https://github.com/nsenterprisesdk/android-photo-enhancer-sdk)
 [![JitPack](https://jitpack.io/v/nsenterprise9865-stack/photoenhancer-sdk-distribution.svg?style=for-the-badge)](https://jitpack.io/#nsenterprise9865-stack/photoenhancer-sdk-distribution)
 [![Platform](https://img.shields.io/badge/Platform-Android_API_26+-10B981?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Commercial-F97316?style=for-the-badge)](#-pricing--licensing)
