@@ -132,7 +132,7 @@ dependencyResolutionManagement {
 ```kotlin
 // app/build.gradle.kts
 dependencies {
-    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.7")
+    implementation("com.github.nsenterprise9865-stack:photoenhancer-sdk-distribution:1.0.9")
 }
 ```
 
@@ -289,7 +289,7 @@ We process all global B2B transactions via the following secure networks:
 
 ## 📋 Changelog
 
-### v1.0.7 — August 2026
+### v1.0.9 — August 2026
 - **New Model:** Replaced GFPGAN with our custom `NSRestore` (8.2 MB) for superior, artifact-free face recovery.
 - **New Upscaler:** Integrated `Real-FSRCNN` (47 KB) for blazing-fast 4× background upscaling.
 - **Granular Control:** Added `AUTO_ENHANCE`, `UPSCALE`, and `RESTORE_FACE` modes to give users fine-grained control.
