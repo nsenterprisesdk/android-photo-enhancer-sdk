@@ -20,6 +20,9 @@
 <p><b>No cloud. No per-image fees. 100% private. One powerful license key.</b></p>
 
 <br/>
+<a href="mailto:support@nsenterprise.dev?subject=Requesting%207-Day%20Test%20License&body=Hi%2C%20I%20would%20like%20to%20request%20a%207-day%20test%20license%20for%20the%20SDK."><img src="https://img.shields.io/badge/Get%207--Day%20Test%20License-Get%20Now-FF9900?style=for-the-badge&logo=minutemailer" alt="Get Test License" /></a>
+<a href="https://nsenterprise.dev/download-demo.html"><img src="https://img.shields.io/badge/Download%20Demo%20APK-Test%20Now-00ADD8?style=for-the-badge&logo=android" alt="Download Demo APK" /></a>
+<br/><br/>
 
 [**🚀 Quick Start**](#-quick-start) &nbsp;|&nbsp; [**✨ Before & After**](#-before--after) &nbsp;|&nbsp; [**🏗️ Features**](#%EF%B8%8F-core-features) &nbsp;|&nbsp; [**💳 Pricing**](#-pricing--licensing) &nbsp;|&nbsp; [**❓ FAQ**](#-faq)
 
@@ -276,14 +279,7 @@ We process all global B2B transactions via the following secure networks:
 
 ### 🇧🇩 Bangladesh Purchase (bKash)
 
-1. Scan the QR code or send to **`01904891242`**.
-2. Transfer the BDT equivalent of your license price at the current market rate.
-3. Include your **email address** in the bKash reference field.
-4. Email your Transaction ID to activate instantly.
-
-<div align="center">
-  <img src="./bkash_qr.jpeg" width="180" alt="bKash QR Code" style="border-radius: 14px; border: 2px solid #8B5CF6; margin-top: 12px;"/>
-</div>
+Users from Bangladesh can pay by bKash. Please contact us for bKash details at support@nsenterprise.dev.
 
 ---
 
